@@ -85,3 +85,10 @@ print(sorted(list))
 # is posible assing it to a variable:
 list2 = sorted(list)
 print (list2)
+
+    #Eighth function: len => Return the string size
+
+string="Abel é Leba"
+print(len(string))
+
+#cout the spaces
