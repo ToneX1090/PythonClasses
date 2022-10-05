@@ -116,4 +116,22 @@ print(string.split())
 string = "T,o,n,e,x"
 print(string.split(","))
 
+# import re > re.sub > Replace a character base indentfying by regets.
+    # \d > digit
+    # \w > letter and digits
+    # [A-Z] > Letter (upper letters interfere)
+
+string = "A1B2C3D4"
+
+print(string)
+
+import re
+
+newstringd = re.sub("\d","*", string)
+newstringw = re.sub("[A-Z]","*", string)
+
+print (newstringd)
+print (newstringw)
+
+
 
