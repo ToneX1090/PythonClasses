@@ -31,16 +31,18 @@ print(tupla_create)
 conjunto_vazio = {}
 print(type(conjunto_vazio))
 
-#sets not accept duplicates
+#sets is not accept duplicates
 conjunto = {1,2,3,4,5,6,2,4,5}
 print(type(conjunto))
 print(conjunto)
 
-#conjuntos não são ordenados
+#sets is not sorted
 conjunto2 = {"a","b","c","d","e"}
 print(type(conjunto2))
 print(conjunto2)
 
 #possui operações de conjuntos matematicos
+conjunto2.add("leba")
+
 
 
