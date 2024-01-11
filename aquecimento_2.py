@@ -11,7 +11,11 @@ for i in game_list_txt:
 
 print (type(i))
 
-
+#to do:
+    #change the list to matix;
+    #compate with the win game;
+    #count/separe the "quinas, senas e quadras";
+    #print the "quinas, senas e quadras".
 
 
 
