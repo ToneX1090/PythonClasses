@@ -2,18 +2,27 @@ import sys
 
 #win_game = input("Digite o jogo vencedor: ")
 cont = 0
+int_games = []
+int_number = []
 
-arquivo = open(sys.argv[1], "r", encoding='utf-8')
-game_list_txt = arquivo.readlines()
+archive = open(sys.argv[1], "r", encoding='utf-8')
+game_list_txt = archive.readlines()
 
-for i in game_list_txt:
-       print(i)
+for game in game_list_txt:
 
-print (type(i))
+    for number in game:
+        real_number = int(number.strip())
+        int_number.append(real_number)
+    int_games.append(int_number)
+
+print(int_games)
+print (type(int_games))
+print(int_number)
+print (type(int_number))
 
 #to do:
     #change the list to matix;
-    #compate with the win game;
+    #compare with the win game;
     #count/separe the "quinas, senas e quadras";
     #print the "quinas, senas e quadras".
 
