@@ -1,24 +1,24 @@
 import sys
 
-#win_game = input("Digite o jogo vencedor: ")
-cont = 0
+#win_game = input (str("Digite o jogo vencedor: "))
+win_game = ["03 22 10 12 43 38"] #esta pegando o /n
+#cont = 0
 int_games = []
-int_number = []
+#int_number = []
 
 archive = open(sys.argv[1], "r", encoding='utf-8')
-game_list_txt = archive.readlines()
+game_list = archive.readlines()
 
-for game in game_list_txt:
+for games in game_list:
+    
+    if games == win_game:
+        print("Jogo ganho")
+    else:
+        print("Jogo perdido.")
+   
 
-    for number in game:
-        real_number = int(number.strip())
-        int_number.append(real_number)
-    int_games.append(int_number)
 
-print(int_games)
-print (type(int_games))
-print(int_number)
-print (type(int_number))
+
 
 #to do:
     #change the list to matix;
