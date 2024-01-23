@@ -4,18 +4,23 @@ import sys
 win_game = ["03 22 10 12 43 38"] #esta pegando o /n
 #cont = 0
 int_games = []
-#int_number = []
+int_number = []
+lista = [[1, 2, 3, 5, 4], [1, 5, 8, 6, 2], [8, 6, 9, 5, 2]]
 
 archive = open(sys.argv[1], "r", encoding='utf-8')
 game_list = archive.readlines()
 
 for games in game_list:
     
-    if games == win_game:
-        print("Jogo ganho")
-    else:
-        print("Jogo perdido.")
-   
+    for game in games.split():
+        int_number.append(int(game))
+    int_games.append(int_number)
+
+print(lista)
+print(type(lista))
+print(int_games)
+
+
 
 
 
