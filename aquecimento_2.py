@@ -21,7 +21,7 @@ for game in game_list:
     elif correct_numbers == 6:
         print("\nLarga tudo que você está rico!\n")
     else:
-        print(game + "\n" + str(correct_numbers) + " corretos\n")
+        print(game + "\n" + str(correct_numbers) + " corretos")
             
 
 # "C:\Users\Milton\Documents\mega.txt"
